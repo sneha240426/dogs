@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Paws | Pet Adoption & Care</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="logo">🐾 Happy Paws</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#adopt">Adopt</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <h1>Find Your New Best Friend</h1>
+    <p>Adopt, care, and love pets who need a home.</p>
+    <button onclick="scrollToAdopt()">Adopt Now</button>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="card">
+        <h3>🐶 Pet Adoption</h3>
+        <p>Find loving pets waiting for their forever homes.</p>
+      </div>
+      <div class="card">
+        <h3>🩺 Veterinary Care</h3>
+        <p>Professional health care for your furry friends.</p>
+      </div>
+      <div class="card">
+        <h3>🦴 Pet Training</h3>
+        <p>Obedience and behavioral training programs.</p>
+      </div>
+      <div class="card">
+        <h3>🏠 Pet Boarding</h3>
+        <p>Safe and comfortable boarding while you're away.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ADOPTION ================= -->
+  <section id="adopt" class="adopt">
+    <h2>Adopt a Pet</h2>
+
+    <div class="filter">
+      <button onclick="filterPets('all')">All</button>
+      <button onclick="filterPets('dog')">Dogs</button>
+      <button onclick="filterPets('cat')">Cats</button>
+    </div>
+
+    <div id="petList" class="pet-grid"></div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      Happy Paws is a non-profit organization dedicated to rescuing,
+      rehabilitating, and rehoming pets in need. We believe every pet
+      deserves love, care, and a safe home.
+    </p>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 Happy Paws. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
